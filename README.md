@@ -21,4 +21,4 @@
 ## 最初の実行方法
 $ sh run.sh\
 $ cd build \
-$ ./HelloWorld\
+$ ./HelloWorld\ 
