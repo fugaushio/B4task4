@@ -1,6 +1,19 @@
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+ tex2jax: {
+ inlineMath: [['$', '$'] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+ }
+ });
+</script>
+
+
 # README
 ## 課題内容
-有限差分法を用いて，２次元ポアソン方程式を解く
+有限差分法を用いて，２次元ポアソン方程式を解く\
+$$1+1=2$$
 
 ## 提出期限
 5月15日まで
