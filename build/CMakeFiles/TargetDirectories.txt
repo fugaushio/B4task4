@@ -1,0 +1,3 @@
+/home/gnkit/kadai/B4task4/build/CMakeFiles/Laplace.dir
+/home/gnkit/kadai/B4task4/build/CMakeFiles/edit_cache.dir
+/home/gnkit/kadai/B4task4/build/CMakeFiles/rebuild_cache.dir

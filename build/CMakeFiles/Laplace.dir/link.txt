@@ -1,0 +1,1 @@
+/opt/intel/oneapi/compiler/2025.1/bin/icpx -Wl,--dependency-file=CMakeFiles/Laplace.dir/link.d CMakeFiles/Laplace.dir/src/Laplace.cpp.o CMakeFiles/Laplace.dir/src/main.cpp.o -o Laplace

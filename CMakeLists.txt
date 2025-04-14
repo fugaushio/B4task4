@@ -21,11 +21,11 @@ set(CMAKE_CXX_STANDARD 14)
 # Source files
 file(GLOB SOURCES
     "src/main.cpp"
-    "src/Greeter.cpp"
+    "src/Laplace.cpp"
 )
 
 # Include directories
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Add executable
-add_executable(HelloWorld ${SOURCES})
+add_executable(Laplace ${SOURCES})

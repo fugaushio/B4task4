@@ -1,8 +1,12 @@
 #include <iostream>
-#include "Greeter.h"
+#include "Laplace.h"
 
 int main() {
-    Greeter greeter("Hello World!");
-    greeter.greet();
-    return 0;
+    Laplace laplace;
+    laplace.init(1, 1, 100, 100);
+    laplace.assembly();
+    laplace.boundary(0, 1e0, 0, 0);
+    laplace.solve();
+    std::cout << "aaa" << std::endl;
+    laplace.show();
 }
