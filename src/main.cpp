@@ -7,6 +7,6 @@ int main() {
     laplace.assembly();
     laplace.boundary(0, 1e0, 0, 0);
     laplace.solve();
-    std::cout << "aaa" << std::endl;
+    std::cout << "solved" << std::endl;
     laplace.show();
 }
