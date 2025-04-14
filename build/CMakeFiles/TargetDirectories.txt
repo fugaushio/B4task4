@@ -1,0 +1,3 @@
+/home/ayato/download/B4task4/build/CMakeFiles/HelloWorld.dir
+/home/ayato/download/B4task4/build/CMakeFiles/edit_cache.dir
+/home/ayato/download/B4task4/build/CMakeFiles/rebuild_cache.dir
