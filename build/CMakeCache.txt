@@ -138,7 +138,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=HelloWorld
+CMAKE_PROJECT_NAME:STATIC=Poisson
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -210,6 +210,15 @@ HelloWorld_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 HelloWorld_SOURCE_DIR:STATIC=/home/kajiyama/code/Kadai/B4task/B4task4
+
+//Value Computed by CMake
+Poisson_BINARY_DIR:STATIC=/home/kajiyama/code/Kadai/B4task/B4task4/build
+
+//Value Computed by CMake
+Poisson_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Poisson_SOURCE_DIR:STATIC=/home/kajiyama/code/Kadai/B4task/B4task4
 
 //No help, variable specified on the command line.
 compiler:UNINITIALIZED=intel

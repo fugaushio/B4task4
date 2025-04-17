@@ -1,5 +1,5 @@
-CMakeFiles/HelloWorld.dir/src/Greeter.cpp.o: \
-  /home/kajiyama/code/Kadai/B4task/B4task4/src/Greeter.cpp \
+CMakeFiles/Poisson.dir/src/constructor.cpp.o: \
+  /home/kajiyama/code/Kadai/B4task/B4task4/src/constructor.cpp \
   /home/kajiyama/code/Kadai/B4task/B4task4/include/Poisson.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/requires_hosted.h \
@@ -128,53 +128,8 @@ CMakeFiles/HelloWorld.dir/src/Greeter.cpp.o: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/functional_hash.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hash_bytes.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ios \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/exception \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/exception_ptr.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/cxxabi_init_exception.h \
-  /opt/intel/oneapi/compiler/2025.1/lib/clang/20/include/__stddef_header_macro.h \
-  /opt/intel/oneapi/compiler/2025.1/lib/clang/20/include/__stddef_ptrdiff_t.h \
-  /opt/intel/oneapi/compiler/2025.1/lib/clang/20/include/__stddef_nullptr_t.h \
-  /opt/intel/oneapi/compiler/2025.1/lib/clang/20/include/__stddef_max_align_t.h \
-  /opt/intel/oneapi/compiler/2025.1/lib/clang/20/include/__stddef_offsetof.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/typeinfo \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/nested_exception.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ios_base.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ext/atomicity.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/gthr.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
-  /usr/include/pthread.h /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/locale_classes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/locale_classes.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/stdexcept \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/streambuf \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_ios.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/locale_facets.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cwctype \
-  /usr/include/wctype.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/locale_facets.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_ios.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ostream.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/vector \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc

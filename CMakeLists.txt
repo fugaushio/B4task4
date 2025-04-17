@@ -13,7 +13,7 @@ elseif(DEFINED compiler)
 endif()
 
 # Project name
-project(HelloWorld)
+project(Poisson)
 
 # Set the C++ standard
 set(CMAKE_CXX_STANDARD 14)
@@ -21,11 +21,18 @@ set(CMAKE_CXX_STANDARD 14)
 # Source files
 file(GLOB SOURCES
     "src/main.cpp"
-    "src/Greeter.cpp"
+    "src/poisson.cpp"
+    "src/read_node.cpp"
+    "src/makeMatrix.cpp"
+    "src/constructor.cpp"
+    "src/output_node.cpp"
+    "src/analyze_node.cpp"
+    "src/solver.cpp"
+    "src/output_phi.cpp"
 )
 
 # Include directories
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Add executable
-add_executable(HelloWorld ${SOURCES})
+add_executable(Poisson ${SOURCES})

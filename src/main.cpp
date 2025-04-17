@@ -1,8 +1,8 @@
 #include <iostream>
-#include "Greeter.h"
+#include "Poisson.h"
 
 int main() {
-    Greeter greeter("Hello World!");
-    greeter.greet();
+    Poisson Poisson("../Input/node.dat");
+    Poisson.poisson();
     return 0;
 }

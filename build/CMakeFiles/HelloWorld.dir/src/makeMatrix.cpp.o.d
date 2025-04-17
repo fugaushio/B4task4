@@ -1,5 +1,5 @@
-CMakeFiles/HelloWorld.dir/src/Greeter.cpp.o: \
-  /home/kajiyama/code/Kadai/B4task/B4task4/src/Greeter.cpp \
+CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.o: \
+  /home/kajiyama/code/Kadai/B4task/B4task4/src/makeMatrix.cpp \
   /home/kajiyama/code/Kadai/B4task/B4task4/include/Poisson.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/requires_hosted.h \

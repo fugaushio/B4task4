@@ -83,10 +83,24 @@ CMakeFiles/HelloWorld.dir/src/Greeter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/src/Greeter.cpp.s"
 	/opt/intel/oneapi/compiler/2025.1/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kajiyama/code/Kadai/B4task/B4task4/src/Greeter.cpp -o CMakeFiles/HelloWorld.dir/src/Greeter.cpp.s
 
+CMakeFiles/HelloWorld.dir/src/constructor.cpp.o: CMakeFiles/HelloWorld.dir/flags.make
+CMakeFiles/HelloWorld.dir/src/constructor.cpp.o: /home/kajiyama/code/Kadai/B4task/B4task4/src/constructor.cpp
+CMakeFiles/HelloWorld.dir/src/constructor.cpp.o: CMakeFiles/HelloWorld.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kajiyama/code/Kadai/B4task/B4task4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HelloWorld.dir/src/constructor.cpp.o"
+	/opt/intel/oneapi/compiler/2025.1/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HelloWorld.dir/src/constructor.cpp.o -MF CMakeFiles/HelloWorld.dir/src/constructor.cpp.o.d -o CMakeFiles/HelloWorld.dir/src/constructor.cpp.o -c /home/kajiyama/code/Kadai/B4task/B4task4/src/constructor.cpp
+
+CMakeFiles/HelloWorld.dir/src/constructor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloWorld.dir/src/constructor.cpp.i"
+	/opt/intel/oneapi/compiler/2025.1/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kajiyama/code/Kadai/B4task/B4task4/src/constructor.cpp > CMakeFiles/HelloWorld.dir/src/constructor.cpp.i
+
+CMakeFiles/HelloWorld.dir/src/constructor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/src/constructor.cpp.s"
+	/opt/intel/oneapi/compiler/2025.1/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kajiyama/code/Kadai/B4task/B4task4/src/constructor.cpp -o CMakeFiles/HelloWorld.dir/src/constructor.cpp.s
+
 CMakeFiles/HelloWorld.dir/src/main.cpp.o: CMakeFiles/HelloWorld.dir/flags.make
 CMakeFiles/HelloWorld.dir/src/main.cpp.o: /home/kajiyama/code/Kadai/B4task/B4task4/src/main.cpp
 CMakeFiles/HelloWorld.dir/src/main.cpp.o: CMakeFiles/HelloWorld.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kajiyama/code/Kadai/B4task/B4task4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HelloWorld.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kajiyama/code/Kadai/B4task/B4task4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HelloWorld.dir/src/main.cpp.o"
 	/opt/intel/oneapi/compiler/2025.1/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HelloWorld.dir/src/main.cpp.o -MF CMakeFiles/HelloWorld.dir/src/main.cpp.o.d -o CMakeFiles/HelloWorld.dir/src/main.cpp.o -c /home/kajiyama/code/Kadai/B4task/B4task4/src/main.cpp
 
 CMakeFiles/HelloWorld.dir/src/main.cpp.i: cmake_force
@@ -97,19 +111,37 @@ CMakeFiles/HelloWorld.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/src/main.cpp.s"
 	/opt/intel/oneapi/compiler/2025.1/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kajiyama/code/Kadai/B4task/B4task4/src/main.cpp -o CMakeFiles/HelloWorld.dir/src/main.cpp.s
 
+CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.o: CMakeFiles/HelloWorld.dir/flags.make
+CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.o: /home/kajiyama/code/Kadai/B4task/B4task4/src/makeMatrix.cpp
+CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.o: CMakeFiles/HelloWorld.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kajiyama/code/Kadai/B4task/B4task4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.o"
+	/opt/intel/oneapi/compiler/2025.1/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.o -MF CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.o.d -o CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.o -c /home/kajiyama/code/Kadai/B4task/B4task4/src/makeMatrix.cpp
+
+CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.i"
+	/opt/intel/oneapi/compiler/2025.1/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kajiyama/code/Kadai/B4task/B4task4/src/makeMatrix.cpp > CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.i
+
+CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.s"
+	/opt/intel/oneapi/compiler/2025.1/bin/icpx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kajiyama/code/Kadai/B4task/B4task4/src/makeMatrix.cpp -o CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.s
+
 # Object files for target HelloWorld
 HelloWorld_OBJECTS = \
 "CMakeFiles/HelloWorld.dir/src/Greeter.cpp.o" \
-"CMakeFiles/HelloWorld.dir/src/main.cpp.o"
+"CMakeFiles/HelloWorld.dir/src/constructor.cpp.o" \
+"CMakeFiles/HelloWorld.dir/src/main.cpp.o" \
+"CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.o"
 
 # External object files for target HelloWorld
 HelloWorld_EXTERNAL_OBJECTS =
 
 HelloWorld: CMakeFiles/HelloWorld.dir/src/Greeter.cpp.o
+HelloWorld: CMakeFiles/HelloWorld.dir/src/constructor.cpp.o
 HelloWorld: CMakeFiles/HelloWorld.dir/src/main.cpp.o
+HelloWorld: CMakeFiles/HelloWorld.dir/src/makeMatrix.cpp.o
 HelloWorld: CMakeFiles/HelloWorld.dir/build.make
 HelloWorld: CMakeFiles/HelloWorld.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kajiyama/code/Kadai/B4task/B4task4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable HelloWorld"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kajiyama/code/Kadai/B4task/B4task4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable HelloWorld"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HelloWorld.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

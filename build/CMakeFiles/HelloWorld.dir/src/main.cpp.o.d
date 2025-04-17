@@ -177,4 +177,4 @@ CMakeFiles/HelloWorld.dir/src/main.cpp.o: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ostream.tcc \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc \
-  /home/kajiyama/code/Kadai/B4task/B4task4/include/Greeter.h
+  /home/kajiyama/code/Kadai/B4task/B4task4/include/Poisson.h
