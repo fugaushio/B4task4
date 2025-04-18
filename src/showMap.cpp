@@ -9,7 +9,7 @@ void Poisson::showMap() {
     int Nx = Lx / dx + 1;
     int Ny = Ly / dy + 1;
 
-    std::ofstream fout("../src/phi.dat");
+    std::ofstream fout("../Output/phi.dat");
 
     for (int col = 0; col < Nx; ++col) {
         double x = col * dx;
@@ -32,22 +32,25 @@ void Poisson::showMap() {
     }
 
     fprintf(gnuplotPipe, "set terminal pngcairo size 800,600\n");
-    fprintf(gnuplotPipe, "set output '../src/phi.png'\n");
+    fprintf(gnuplotPipe, "set output '../Output/phi.png'\n");
 
-    fprintf(gnuplotPipe, "set terminal wxt font 'Arial,10'\n");
     fprintf(gnuplotPipe, "set title 'heatmap'\n");
     fprintf(gnuplotPipe, "set view map\n");
 
     fprintf(gnuplotPipe, "set pm3d interpolate 10,10\n");
+    fprintf(gnuplotPipe, "set xlabel 'x'\n");
+    fprintf(gnuplotPipe, "set ylabel 'y' offset -57,0\n"); 
     fprintf(gnuplotPipe, "set xrange [0:%f]\n", Lx);
     fprintf(gnuplotPipe, "set yrange [0:%f]\n", Ly); 
+    fprintf(gnuplotPipe, "set colorbox user origin 0.9, 0.2 size 0.02, 0.6\n");
     fprintf(gnuplotPipe, "set view 0,0\n"); 
     fprintf(gnuplotPipe, "set palette defined (0 'blue', 1 'white', 2 'red')\n");
 
-    fprintf(gnuplotPipe, "splot '../src/phi.dat' using 1:2:3 with pm3d notitle\n");
-    
-
+    fprintf(gnuplotPipe, "splot '../Output/phi.dat' using 1:2:3 with pm3d notitle\n");
     fprintf(gnuplotPipe, "unset output\n");
+
+    fprintf(gnuplotPipe, "set terminal wxt font 'Arial,10'\n");
+    fprintf(gnuplotPipe, "replot\n");
 
     fflush(gnuplotPipe);
     pclose(gnuplotPipe); 
