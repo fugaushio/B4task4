@@ -8,5 +8,6 @@ void  Poisson::poisson() {//メンバ関数をまとめた
     this->makeMatrix();
     this->solver();
     this->output_phi();
+    this->showMap();
 
 }

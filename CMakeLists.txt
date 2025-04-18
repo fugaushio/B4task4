@@ -29,6 +29,7 @@ file(GLOB SOURCES
     "src/analyze_node.cpp"
     "src/solver.cpp"
     "src/output_phi.cpp"
+    "src/showMap.cpp"
 )
 
 # Include directories

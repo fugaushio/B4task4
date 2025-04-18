@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Poisson.dir/src/poisson.cpp.o.d"
   "CMakeFiles/Poisson.dir/src/read_node.cpp.o"
   "CMakeFiles/Poisson.dir/src/read_node.cpp.o.d"
+  "CMakeFiles/Poisson.dir/src/showMap.cpp.o"
+  "CMakeFiles/Poisson.dir/src/showMap.cpp.o.d"
   "CMakeFiles/Poisson.dir/src/solver.cpp.o"
   "CMakeFiles/Poisson.dir/src/solver.cpp.o.d"
   "Poisson"

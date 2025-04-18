@@ -16,6 +16,7 @@ public:
     void makeMatrix();//形状と境界条件から係数行列とベクトルを作る
     void solver();//連立方程式を解く
     void output_phi();//出力
+    void showMap();
 
 private:
     std::string message_;//非公開メンバ
