@@ -22,10 +22,11 @@ set(CMAKE_CXX_STANDARD 14)
 file(GLOB SOURCES
     "src/main.cpp"
     "src/Laplace.cpp"
+    "src/Fem.cpp"
 )
 
 # Include directories
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Add executable
-add_executable(Laplace ${SOURCES})
+add_executable(Fem ${SOURCES})
