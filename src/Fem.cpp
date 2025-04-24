@@ -151,52 +151,52 @@ void Fem::boundary(){
             }
         }
         // Neumann
-        if (node_list[t.row()][0] <= 0.00001) {
-            if (node_list[t.row()][1] <= 0.00001){
-                continue;
-            }else{
-                if(containsPair(checked, t.row(), t.col())){
-                    t = Eigen::Triplet<double>(t.row(), t.col(), 0);
-                    continue;
-                }
-                if(t.row()==t.col()){
-                    t = Eigen::Triplet<double>(t.row(), t.col(), -1);
-                    checked.push_back({t.row(), t.col()});
-                    continue;
-                    // tripletVec_b.push_back(Eigen::Triplet<double>(t.row(), 0, n_left / dx)); #shouryaku
-                }else if(t.row()==(t.col() - 1)){
-                    t = Eigen::Triplet<double>(t.row(), t.col(), 1);
-                    checked.push_back({t.row(), t.col()});
-                    continue;
-                }else{
-                    t = Eigen::Triplet<double>(t.row(), t.col(), 0);
-                    continue;
-                }
-            }
-        }
-        if (0.089999 <= node_list[t.row()][0]){
-            if (0.089999 <= node_list[t.row()][1]){
-                continue;
-            }else{
-                if(containsPair(checked, t.row(), t.col())){
-                    t = Eigen::Triplet<double>(t.row(), t.col(), 0);
-                    continue;
-                }
-                if((t.row())==t.col()){
-                    t = Eigen::Triplet<double>(t.row(), t.col(), 1);
-                    checked.push_back({t.row(), t.col()});
-                    continue;
-                    // tripletVec_b.push_back(Eigen::Triplet<double>(t.row(), 0, n_right / dx)); #shouryaku
-                }else if(t.row()==(t.col() + 1)){
-                    t = Eigen::Triplet<double>(t.row(), t.col(), -1);
-                    checked.push_back({t.row(), t.col()});
-                    continue;
-                }else{
-                    t = Eigen::Triplet<double>(t.row(), t.col(), 0);
-                    continue;
-                }
-            }
-        }
+        // if (node_list[t.row()][0] <= 0.00001) {
+        //     if (node_list[t.row()][1] <= 0.00001){
+        //         continue;
+        //     }else{
+        //         if(containsPair(checked, t.row(), t.col())){
+        //             t = Eigen::Triplet<double>(t.row(), t.col(), 0);
+        //             continue;
+        //         }
+        //         if(t.row()==t.col()){
+        //             t = Eigen::Triplet<double>(t.row(), t.col(), -1);
+        //             checked.push_back({t.row(), t.col()});
+        //             continue;
+        //             // tripletVec_b.push_back(Eigen::Triplet<double>(t.row(), 0, n_left / dx)); #shouryaku
+        //         }else if(t.row()==(t.col() - 1)){
+        //             t = Eigen::Triplet<double>(t.row(), t.col(), 1);
+        //             checked.push_back({t.row(), t.col()});
+        //             continue;
+        //         }else{
+        //             t = Eigen::Triplet<double>(t.row(), t.col(), 0);
+        //             continue;
+        //         }
+        //     }
+        // }
+        // if (0.089999 <= node_list[t.row()][0]){
+        //     if (0.089999 <= node_list[t.row()][1]){
+        //         continue;
+        //     }else{
+        //         if(containsPair(checked, t.row(), t.col())){
+        //             t = Eigen::Triplet<double>(t.row(), t.col(), 0);
+        //             continue;
+        //         }
+        //         if((t.row())==t.col()){
+        //             t = Eigen::Triplet<double>(t.row(), t.col(), 1);
+        //             checked.push_back({t.row(), t.col()});
+        //             continue;
+        //             // tripletVec_b.push_back(Eigen::Triplet<double>(t.row(), 0, n_right / dx)); #shouryaku
+        //         }else if(t.row()==(t.col() + 1)){
+        //             t = Eigen::Triplet<double>(t.row(), t.col(), -1);
+        //             checked.push_back({t.row(), t.col()});
+        //             continue;
+        //         }else{
+        //             t = Eigen::Triplet<double>(t.row(), t.col(), 0);
+        //             continue;
+        //         }
+        //     }
+        // }
     }
 }
 
