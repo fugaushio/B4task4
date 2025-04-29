@@ -21,7 +21,9 @@ set(CMAKE_CXX_STANDARD 14)
 # Source files
 file(GLOB SOURCES
     "src/main.cpp"
-    "src/Greeter.cpp"
+    "src/Gauss.cpp"
+    "src/Matrix.cpp"
+    "src/FDM.cpp"
 )
 
 # Include directories

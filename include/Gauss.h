@@ -1,14 +1,12 @@
-#ifdef GAUSS_H
+#ifndef GAUSS_H
 #define GAUSS_H
 
 #include <vector>
+#include <iostream>
 
-class Gauss {
-    public:
-        Gauss(const vector(double)& data);
-        void gauss();
-    
-    private:
-        vector(double) data_;
-}
-#endif //GAUSS_H
+class GaussE {
+public:
+    static void gausse(std::vector<std::vector<double>> A,std::vector<double> x,std::vector<double> b);
+};
+
+#endif // GAUSS_H

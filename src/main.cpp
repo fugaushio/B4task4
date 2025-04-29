@@ -1,9 +1,14 @@
 #include <iostream>
-#include "Greeter.h"
+#include <vector>
+#include "Gauss.h"
 
 int main() {
-    Greeter greeter("Hello World!");
-    greeter.greet();
+    std::vector<double> x;
+    std::vector<double> b;
+    std::vector<std::vector<double>> A;
+
+
+    GaussE::gausse(A,x,b);
 
     return 0;
 }
