@@ -1,12 +1,12 @@
-#ifdef OUTPUT_H
+#ifndef OUTPUT_H
 #define OUTPUT_H
 
 #include <iostream>
 #include <vector>
 
-class Output {
+class OutputCSV {
 public:
-    static void output(std::vector<double> x);
+    static void output(const std::vector<double>& x, const std::string& filename);
 };
 
 #endif //OUTPUT_H
