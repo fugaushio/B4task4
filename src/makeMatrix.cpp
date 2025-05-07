@@ -70,6 +70,7 @@ void Poisson::makeMatrix() {
         for (int j = 0; j < Nx * Ny; j++) {
             cMatrix[idx][j] = (j == idx) ? 1.0 : 0.0;
         }
+        bvector[idx] = 0.0;  
     }
 
     
