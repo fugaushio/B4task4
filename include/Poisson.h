@@ -29,7 +29,7 @@ private:
  
     std::vector<std::vector<double>> Matrix;
     std::vector<double> Vector;
-    std::vector<double> Phi;
+    std::vector<double> Phi;//解
 };
 
 #endif // GREETER_H

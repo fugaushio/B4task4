@@ -9,7 +9,7 @@ void Poisson::showMap() {
     int Nx = Lx / dx + 1;
     int Ny = Ly / dy + 1;
 
-    std::ofstream fout("../Output/phi.dat");
+    std::ofstream fout("../Output/phi.dat");//描画用のdatファイル作成
 
     for (int col = 0; col < Nx; ++col) {
         double x = col * dx;
@@ -24,14 +24,14 @@ void Poisson::showMap() {
 
 
 
-    FILE* gnuplotPipe = popen("gnuplot -persistent", "w");  
+    FILE* gnuplotPipe = popen("gnuplot -persistent", "w");  //gnuplotで描画
 
     if (!gnuplotPipe) {
         std::cerr << "gnuplot を開けませんでした。" << std::endl;
         return;
     }
 
-    fprintf(gnuplotPipe, "set terminal pngcairo size 800,600\n");
+    fprintf(gnuplotPipe, "set terminal pngcairo size 800,600\n");//pngファイルで出力
     fprintf(gnuplotPipe, "set output '../Output/phi.png'\n");
 
     fprintf(gnuplotPipe, "set title 'heatmap'\n");
