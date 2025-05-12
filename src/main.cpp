@@ -6,7 +6,7 @@ int main() {
     Greeter greeter("Solving Poisson Equation...");
     greeter.greet();
 
-    PoissonSolver solver("node.dat");
+    PoissonSolver solver("Input/node.dat");
     solver.solve();
     solver.outputResult("solution.dat");
 
