@@ -1,8 +1,15 @@
 #include <iostream>
 #include "Greeter.h"
+#include "PoissonSolver.h"
 
 int main() {
-    Greeter greeter("Hello World!");
+    Greeter greeter("Solving Poisson Equation...");
     greeter.greet();
+
+    PoissonSolver solver("node.dat");
+    solver.solve();
+    solver.outputResult("solution.dat");
+
+    std::cout << "Solution written to solution.dat\n";
     return 0;
 }

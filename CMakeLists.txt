@@ -22,6 +22,7 @@ set(CMAKE_CXX_STANDARD 14)
 file(GLOB SOURCES
     "src/main.cpp"
     "src/Greeter.cpp"
+    "src/PoissonSolver.cpp"
 )
 
 # Include directories
@@ -29,3 +30,4 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # Add executable
 add_executable(HelloWorld ${SOURCES})
+
