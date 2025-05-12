@@ -153,6 +153,30 @@ src/Greeter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/Greeter.cpp.s
 .PHONY : src/Greeter.cpp.s
 
+src/PoissonSolver.o: src/PoissonSolver.cpp.o
+.PHONY : src/PoissonSolver.o
+
+# target to build an object file
+src/PoissonSolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/PoissonSolver.cpp.o
+.PHONY : src/PoissonSolver.cpp.o
+
+src/PoissonSolver.i: src/PoissonSolver.cpp.i
+.PHONY : src/PoissonSolver.i
+
+# target to preprocess a source file
+src/PoissonSolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/PoissonSolver.cpp.i
+.PHONY : src/PoissonSolver.cpp.i
+
+src/PoissonSolver.s: src/PoissonSolver.cpp.s
+.PHONY : src/PoissonSolver.s
+
+# target to generate assembly for a file
+src/PoissonSolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/src/PoissonSolver.cpp.s
+.PHONY : src/PoissonSolver.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/Greeter.o"
 	@echo "... src/Greeter.i"
 	@echo "... src/Greeter.s"
+	@echo "... src/PoissonSolver.o"
+	@echo "... src/PoissonSolver.i"
+	@echo "... src/PoissonSolver.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
