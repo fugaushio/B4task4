@@ -39,33 +39,42 @@ void PoissonSolver::applyBoundaryConditions() {
     }
 }
 
+// 近傍ノードかどうか（グリッド間隔が約0.05〜0.1と仮定）
+bool PoissonSolver::isNeighbor(const Node& a, const Node& b, double h) {
+    double dx = std::abs(a.x - b.x);
+    double dy = std::abs(a.y - b.y);
+    return (dx + dy) < (h + 1e-6) && std::abs(dx * dy) < 1e-6; // 直交隣接（上下左右のみ）
+}
+
 void PoissonSolver::constructAndSolveSystem() {
-    // 簡易なラプラス反復法（ガウス・ザイデル）で例示
     const int maxIter = 10000;
     const double tol = 1e-6;
+    const double h = 0.05; // メッシュ間隔の近似値（調整可能）
+
     std::vector<double> newValues = values;
 
     for (int iter = 0; iter < maxIter; ++iter) {
         double maxDiff = 0.0;
 
-        for (size_t i = 1; i < nodes.size() - 1; ++i) {
-            if (nodes[i].isBoundaryBottom || nodes[i].isBoundaryTop) continue;
+        for (size_t i = 0; i < nodes.size(); ++i) {
+            if (nodes[i].isBoundaryBottom || nodes[i].isBoundaryTop)
+                continue;  // Dirichlet境界は固定
 
             double sum = 0.0;
             int count = 0;
 
-            // 単純な隣接ノードの平均（ここでは簡易な差分法の近似）
-            if (i > 0) {
-                sum += values[i - 1];
-                ++count;
-            }
-            if (i + 1 < nodes.size()) {
-                sum += values[i + 1];
-                ++count;
+            for (size_t j = 0; j < nodes.size(); ++j) {
+                if (i == j) continue;
+                if (isNeighbor(nodes[i], nodes[j], h)) {
+                    sum += values[j];
+                    ++count;
+                }
             }
 
-            newValues[i] = sum / count;
-            maxDiff = std::max(maxDiff, std::abs(newValues[i] - values[i]));
+            if (count > 0) {
+                newValues[i] = sum / count;
+                maxDiff = std::max(maxDiff, std::abs(newValues[i] - values[i]));
+            }
         }
 
         values = newValues;
