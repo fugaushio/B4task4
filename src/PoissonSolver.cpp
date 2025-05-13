@@ -3,7 +3,6 @@
 #include <iostream>
 #include <sstream>
 #include <cmath>
-#include <map>
 
 PoissonSolver::PoissonSolver(const std::string& filename) {
     loadNodes(filename);
@@ -23,30 +22,30 @@ void PoissonSolver::loadNodes(const std::string& filename) {
         node.x = x;
         node.y = y;
         node.isBoundaryBottom = (std::abs(y - 0.0) < 1e-6);
-        node.isBoundaryTop = (std::abs(y - 0.09) < 1e-6);
-        node.isBoundaryLeft = (std::abs(x - 0.0) < 1e-6);
-        node.isBoundaryRight = (std::abs(x - 0.09) < 1e-6);
+        node.isBoundaryTop = (std::abs(y - 0.09) < 1e-6);  // Dirichlet φ=1
+        node.isBoundaryLeft = (std::abs(x - 0.0) < 1e-6);  // Neumann ∂φ/∂x=0
+        node.isBoundaryRight = (std::abs(x - 0.09) < 1e-6); // Neumann ∂φ/∂x=0
         nodes.push_back(node);
     }
 
     values.resize(nodes.size(), 0.0);
 
-    // 格子のインデックス構築
-    int nx = 0, ny = 0;
+    // 格子のnx, nyを推定
+    nx = 0;
+    ny = 0;
     for (const auto& node : nodes) {
         if (std::abs(node.y - 0.0) < 1e-6) ++nx;
         if (std::abs(node.x - 0.0) < 1e-6) ++ny;
     }
-    this->nx = nx;
-    this->ny = ny;
 }
 
 void PoissonSolver::applyBoundaryConditions() {
     for (size_t i = 0; i < nodes.size(); ++i) {
+        if (nodes[i].isBoundaryTop) {
+            values[i] = 1.0;  // φ=1
+        }
         if (nodes[i].isBoundaryBottom) {
-            values[i] = 0.0; // φ = 0
-        } else if (nodes[i].isBoundaryTop) {
-            values[i] = 1.0; // φ = 1
+            values[i] = 0.0;  // φ=0
         }
     }
 }
@@ -59,22 +58,27 @@ void PoissonSolver::constructAndSolveSystem() {
     for (int iter = 0; iter < maxIter; ++iter) {
         double maxDiff = 0.0;
 
-        for (int j = 1; j < ny - 1; ++j) {
-            for (int i = 1; i < nx - 1; ++i) {
+        for (int j = 0; j < ny; ++j) {
+            for (int i = 0; i < nx; ++i) {
                 int idx = j * nx + i;
+                const Node& node = nodes[idx];
 
-                if (nodes[idx].isBoundaryBottom || nodes[idx].isBoundaryTop) continue;
+                // Dirichlet条件節点は固定
+                if (node.isBoundaryTop || node.isBoundaryBottom) continue;
 
-                int idxL = j * nx + (i - 1);
-                int idxR = j * nx + (i + 1);
-                int idxB = (j - 1) * nx + i;
-                int idxT = (j + 1) * nx + i;
+                // Neumann条件の処理
+                int iL = (i == 0) ? i + 1 : i - 1;
+                int iR = (i == nx - 1) ? i - 1 : i + 1;
+                int jB = (j == 0) ? j + 1 : j - 1;
+                int jT = (j == ny - 1) ? j - 1 : j + 1;
 
-                // Neumann条件（∂φ/∂x = 0）を模倣（左右端の場合）
-                if (nodes[idx].isBoundaryLeft) idxL = idxR;
-                if (nodes[idx].isBoundaryRight) idxR = idxL;
+                int idxL = j * nx + iL;
+                int idxR = j * nx + iR;
+                int idxB = jB * nx + i;
+                int idxT = jT * nx + i;
 
                 double average = 0.25 * (values[idxL] + values[idxR] + values[idxB] + values[idxT]);
+
                 maxDiff = std::max(maxDiff, std::abs(values[idx] - average));
                 newValues[idx] = average;
             }
