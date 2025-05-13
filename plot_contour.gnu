@@ -1,5 +1,5 @@
 set terminal pngcairo size 800,600 enhanced
-set output 'heatmap.png'
+set output 'contour.png'
 set pm3d map
 set palette rgbformulae 33,13,10
 set xlabel 'X'
