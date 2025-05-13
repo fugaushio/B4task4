@@ -8,8 +8,8 @@ int main() {
 
     PoissonSolver solver("Input/node.dat");
     solver.solve();
-    solver.outputResult("solution2.dat");
+    solver.outputResult("solution.dat");
 
-    std::cout << "Solution written to solution2.dat\n";
+    std::cout << "Solution written to solution.dat\n";
     return 0;
 }
