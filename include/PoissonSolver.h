@@ -1,13 +1,15 @@
 #ifndef POISSONSOLVER_H
 #define POISSONSOLVER_H
 
-#include <vector>
 #include <string>
+#include <vector>
 
 struct Node {
     double x, y;
-    bool isBoundaryBottom = false;
     bool isBoundaryTop = false;
+    bool isBoundaryBottom = false;
+    bool isBoundaryLeft = false;
+    bool isBoundaryRight = false;
 };
 
 class PoissonSolver {
@@ -17,13 +19,15 @@ public:
     void outputResult(const std::string& filename) const;
 
 private:
-    std::vector<Node> nodes;
-    std::vector<double> values;
-
     void loadNodes(const std::string& filename);
     void applyBoundaryConditions();
     void constructAndSolveSystem();
-    bool isNeighbor(const Node& a, const Node& b, double h = 0.05);
+
+    std::vector<Node> nodes;
+    std::vector<double> values;
+
+    int nx;
+    int ny;
 };
 
 #endif // POISSONSOLVER_H
