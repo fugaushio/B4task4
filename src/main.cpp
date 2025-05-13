@@ -10,6 +10,6 @@ int main() {
     solver.solve();
     solver.outputResult("solution2.dat");
 
-    std::cout << "Solution written to solution.dat\n";
+    std::cout << "Solution written to solution2.dat\n";
     return 0;
 }
