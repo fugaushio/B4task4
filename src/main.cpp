@@ -11,5 +11,7 @@ int main() {
     solver.outputResult("solution.dat");
 
     std::cout << "Solution written to solution.dat\n";
+    std::cout << "出力ファイル名は変えました！" << std::endl;
+
     return 0;
 }
