@@ -1,6 +1,6 @@
-CMakeFiles/HelloWorld.dir/src/main.cpp.o: \
-  /home/ayato/B4task4/src/main.cpp \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
+CMakeFiles/HelloWorld.dir/src/Gauss.cpp.o: \
+  /home/ayato/B4task4/src/Gauss.cpp /home/ayato/B4task4/include/Gauss.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/vector \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/requires_hosted.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -12,11 +12,51 @@ CMakeFiles/HelloWorld.dir/src/main.cpp.o: \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/functexcept.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/exception_defines.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/cpp_type_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ext/type_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ext/numeric_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/type_traits \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/move.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/utility.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/concept_check.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/debug/assertions.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ptr_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/debug/debug.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bit \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/new \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/exception.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/memoryfwd.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ext/alloc_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/initializer_list \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/functional_hash.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hash_bytes.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/refwrap.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/invoke.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward/binders.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ios \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iosfwd \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stringfwd.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/memoryfwd.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/postypes.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cwchar \
   /usr/include/wchar.h \
@@ -38,9 +78,7 @@ CMakeFiles/HelloWorld.dir/src/main.cpp.o: \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/exception \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/exception.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/exception_ptr.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/exception_defines.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/cxxabi_init_exception.h \
   /opt/intel/oneapi/compiler/2025.1/lib/clang/20/include/__stddef_header_macro.h \
   /opt/intel/oneapi/compiler/2025.1/lib/clang/20/include/__stddef_ptrdiff_t.h \
@@ -48,10 +86,6 @@ CMakeFiles/HelloWorld.dir/src/main.cpp.o: \
   /opt/intel/oneapi/compiler/2025.1/lib/clang/20/include/__stddef_max_align_t.h \
   /opt/intel/oneapi/compiler/2025.1/lib/clang/20/include/__stddef_offsetof.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/typeinfo \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hash_bytes.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/new \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/move.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/type_traits \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/nested_exception.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/char_traits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/localefwd.h \
@@ -96,37 +130,9 @@ CMakeFiles/HelloWorld.dir/src/main.cpp.o: \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/locale_classes.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/functexcept.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/cpp_type_traits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ostream_insert.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/cxxabi_forced.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator_base_funcs.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/concept_check.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/debug/assertions.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator_base_types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ext/type_traits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ptr_traits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_function.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward/binders.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ext/numeric_traits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/utility.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/debug/debug.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bit \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/refwrap.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/invoke.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/initializer_list \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ext/alloc_traits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ext/string_conversions.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstdlib \
   /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -156,7 +162,6 @@ CMakeFiles/HelloWorld.dir/src/main.cpp.o: \
   /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/charconv.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/functional_hash.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.tcc \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/locale_classes.tcc \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error \
@@ -177,11 +182,10 @@ CMakeFiles/HelloWorld.dir/src/main.cpp.o: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ostream.tcc \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/vector \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc \
-  /home/ayato/B4task4/include/Gauss.h \
-  /home/ayato/B4task4/include/OutputCSV.h \
-  /home/ayato/B4task4/include/Matrix.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/fstream \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/fstream.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/sstream \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/sstream.tcc

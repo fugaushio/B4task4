@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void GaussE::gausse(std::vector<std::vector<double>> A,std::vector<double> x,std::vector<double> b){
+void GaussE::gausse(std::vector<std::vector<double>>& A,std::vector<double>& x,std::vector<double>& b){
     int n = A.size();
 
     for (int i = 0; i < n; i++) {

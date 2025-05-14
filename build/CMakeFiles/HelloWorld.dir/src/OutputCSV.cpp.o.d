@@ -1,5 +1,6 @@
-CMakeFiles/HelloWorld.dir/src/main.cpp.o: \
-  /home/ayato/B4task4/src/main.cpp \
+CMakeFiles/HelloWorld.dir/src/OutputCSV.cpp.o: \
+  /home/ayato/B4task4/src/OutputCSV.cpp \
+  /home/ayato/B4task4/include/OutputCSV.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iostream \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/requires_hosted.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -182,6 +183,10 @@ CMakeFiles/HelloWorld.dir/src/main.cpp.o: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc \
-  /home/ayato/B4task4/include/Gauss.h \
-  /home/ayato/B4task4/include/OutputCSV.h \
-  /home/ayato/B4task4/include/Matrix.h
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/fstream \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/fstream.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/sstream \
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/sstream.tcc

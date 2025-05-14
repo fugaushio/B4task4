@@ -62,7 +62,8 @@
         "thread": "cpp",
         "cfenv": "cpp",
         "typeinfo": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "fstream": "cpp"
     },
     "C_Cpp.dimInactiveRegions": false
 }

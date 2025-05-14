@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HelloWorld.dir/link.d"
-  "CMakeFiles/HelloWorld.dir/src/Greeter.cpp.o"
-  "CMakeFiles/HelloWorld.dir/src/Greeter.cpp.o.d"
+  "CMakeFiles/HelloWorld.dir/src/Gauss.cpp.o"
+  "CMakeFiles/HelloWorld.dir/src/Gauss.cpp.o.d"
+  "CMakeFiles/HelloWorld.dir/src/Matrix.cpp.o"
+  "CMakeFiles/HelloWorld.dir/src/Matrix.cpp.o.d"
+  "CMakeFiles/HelloWorld.dir/src/OutputCSV.cpp.o"
+  "CMakeFiles/HelloWorld.dir/src/OutputCSV.cpp.o.d"
   "CMakeFiles/HelloWorld.dir/src/main.cpp.o"
   "CMakeFiles/HelloWorld.dir/src/main.cpp.o.d"
   "HelloWorld"

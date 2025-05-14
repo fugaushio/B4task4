@@ -23,7 +23,7 @@ file(GLOB SOURCES
     "src/main.cpp"
     "src/Gauss.cpp"
     "src/Matrix.cpp"
-    "src/FDM.cpp"
+    "src/OutputCSV.cpp"
 )
 
 # Include directories

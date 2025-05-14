@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ayato/download/B4task4/src/Greeter.cpp" "CMakeFiles/HelloWorld.dir/src/Greeter.cpp.o" "gcc" "CMakeFiles/HelloWorld.dir/src/Greeter.cpp.o.d"
-  "/home/ayato/download/B4task4/src/main.cpp" "CMakeFiles/HelloWorld.dir/src/main.cpp.o" "gcc" "CMakeFiles/HelloWorld.dir/src/main.cpp.o.d"
-  "" "HelloWorld" "gcc" "CMakeFiles/HelloWorld.dir/link.d"
+  "/home/ayato/B4task4/src/Gauss.cpp" "CMakeFiles/HelloWorld.dir/src/Gauss.cpp.o" "gcc" "CMakeFiles/HelloWorld.dir/src/Gauss.cpp.o.d"
+  "/home/ayato/B4task4/src/Matrix.cpp" "CMakeFiles/HelloWorld.dir/src/Matrix.cpp.o" "gcc" "CMakeFiles/HelloWorld.dir/src/Matrix.cpp.o.d"
+  "/home/ayato/B4task4/src/OutputCSV.cpp" "CMakeFiles/HelloWorld.dir/src/OutputCSV.cpp.o" "gcc" "CMakeFiles/HelloWorld.dir/src/OutputCSV.cpp.o.d"
+  "/home/ayato/B4task4/src/main.cpp" "CMakeFiles/HelloWorld.dir/src/main.cpp.o" "gcc" "CMakeFiles/HelloWorld.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
