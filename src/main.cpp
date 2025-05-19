@@ -1,8 +1,8 @@
-#include <iostream>
-#include "Greeter.h"
+#include "Solver.h"
 
 int main() {
-    Greeter greeter("Hello World!");
-    greeter.greet();
+    Solver solver;
+    solver.run();
+    solver.print();
     return 0;
 }
