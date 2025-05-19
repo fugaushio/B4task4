@@ -1,31 +1,15 @@
-# Set the minimum CMake version required for the project
 cmake_minimum_required(VERSION 3.10)
+project(PoissonSolver)
 
-# Compiler options
-if(compiler STREQUAL intel)
-    # Use Intel compiler if specified
-    set(CMAKE_C_COMPILER "icx")
-    set(CMAKE_CXX_COMPILER "icpx")
-    set(base_compile_options "-Wall -Wextra -O3")
-elseif(DEFINED compiler)
-    # Error if an invalid compiler is specified
-    message(FATAL ERROR "invalid compiler")
-endif()
-
-# Project name
-project(HelloWorld)
-
-# Set the C++ standard
 set(CMAKE_CXX_STANDARD 14)
 
-# Source files
+find_package(Eigen3 REQUIRED)
+
+include_directories(include)
+
 file(GLOB SOURCES
-    "src/main.cpp"
-    "src/Greeter.cpp"
+    "src/*.cpp"
 )
 
-# Include directories
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-
-# Add executable
-add_executable(HelloWorld ${SOURCES})
+add_executable(PoissonSolver ${SOURCES})
+target_link_libraries(PoissonSolver Eigen3::Eigen)
