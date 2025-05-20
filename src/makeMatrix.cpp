@@ -29,6 +29,7 @@ void Poisson::makeMatrix() {
         }
     } 
 
+
     //ノイマン条件
     for (int row = 1; row< Ny-1; row++){     // 左側境界（x = 0, ∂φ/∂x = 0）
         int idx = row;                       //左端
@@ -47,14 +48,13 @@ void Poisson::makeMatrix() {
     }
 
     
-    for (int col = 1; col < Nx-1; col++) {     // 下側境界（y = 0, ∂φ/∂y = 0）
+    /* for (int col = 1; col < Nx-1; col++) {     // 下側境界（y = 0, ∂φ/∂y = 0）
         int idx = col * Ny;                    // 下端（各列の最下段）
         int idx_next = idx + 1;                // 隣接ノード（y方向に上）
 
         cMatrix[idx][idx] = -1.0/dy;
         cMatrix[idx][idx_next] = 1.0/dy;
     }
-
     
     for (int col = 1; col < Nx-1; col++) {      // 上側境界（y = Ly, ∂φ/∂y = 0）
         int idx = col * Ny + (Ny - 1);          // 上端（各列の最上段）
@@ -62,7 +62,7 @@ void Poisson::makeMatrix() {
 
         cMatrix[idx][idx] = 1.0/dy;
         cMatrix[idx][idx_prev] = -1.0/dy;
-    }
+    } */
     
     //ディクリレ条件    
     for (int col = 0; col < Nx; col++) {    // 下側境界（y = 0, φ = 0）
@@ -73,14 +73,13 @@ void Poisson::makeMatrix() {
         bvector[idx] = 0.0;  
     }
 
-    
     for (int col = 0; col < Nx; col++) {    // 上側境界（y = Ly, φ = 1）
         int idx = col * Ny + (Ny - 1);      // 各列の上端ノード
         for (int j = 0; j < Nx * Ny; j++) {
             cMatrix[idx][j] = (j == idx) ? 1.0 : 0.0;
         }
         bvector[idx] = 1.0;
-}
+    }
 
 
     this->Matrix = cMatrix;//メンバ演算子に代入
